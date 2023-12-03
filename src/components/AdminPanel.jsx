@@ -28,7 +28,7 @@ const AdminPanel = ({ data, setData, columns, handleEdit }) => {
 
     const handleDeleteSelected = () => {
         // Implement delete selected logic
-        console.log("checked", checked);
+
         const updatedData = data.filter((item) => !selectedRowIds[item.id]);
         setData(updatedData);
         setSelectedRowIds({});
@@ -36,8 +36,6 @@ const AdminPanel = ({ data, setData, columns, handleEdit }) => {
             (id) => data[Number(id)]
         );
         console.log("Delete selected rows:", selectedRows);
-        setChecked(false);
-        console.log("checked 2 -->", checked);
     };
 
     const handleSearch = (e) => {
