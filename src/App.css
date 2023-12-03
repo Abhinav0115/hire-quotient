@@ -1,0 +1,17 @@
+.edit:hover,
+.delete:hover {
+    background: none !important;
+}
+
+button:hover:enabled {
+    background-color: #3a64df;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
